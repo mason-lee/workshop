@@ -12,9 +12,7 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic);
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
@@ -22,12 +20,12 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 38px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Open Sans', sans-serif;
+$headingFont: 'Open Sans', sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
+$headingTextTransform: normal;
+$headingFontWeight: 300;
 $linkColor: #2a76dd;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
@@ -47,3 +45,7 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.gray-text {
+    color: #666666 !important;
+}
